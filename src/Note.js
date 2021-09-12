@@ -5,16 +5,16 @@ const Note = (props) => {
         props.deleteItem(props.id);
     };
     return (
-        <>
-            <div className="note">
-                <h1> {props.title} </h1>
-                <br />
-                <p>{props.content}</p>
-                <button className="btn" onClick={deleteNote}>
-                    <DeleteOutlineIcon className="deleteIcon" />
-                </button>
-            </div>
-        </>
+
+        <div className="note">
+            <h1> {props.title} </h1>
+            <br />
+            <p>{props.content}</p>
+            <button className="btn" onClick={deleteNote}>
+                <DeleteOutlineIcon className="deleteIcon" />
+            </button>
+        </div>
+
     )
 }
 export default Note;
